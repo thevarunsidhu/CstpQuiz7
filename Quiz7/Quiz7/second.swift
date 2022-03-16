@@ -23,22 +23,24 @@ struct secondPage: View {
                     ZStack{
                         Rectangle()
                             .fill(Color.white)
-                            .frame(width: 375, height: 100)
+                            .frame(width: 375, height: 80)
                     
                         
                         Text("Add an item")
-                            .fontWeight(.medium)
+                            .fontWeight(.bold)
+                            .font(.largeTitle)
                             .foregroundColor(Color.black)
                             .multilineTextAlignment(.center)
         
                     }
                     
-                }
+                }.padding(100)
                 
 
                 TextField("Title ", text: $name)
                     .frame(width: 250, height: 35)
                     .textFieldStyle(.roundedBorder)
+                    .padding()
                 
                 TextField("Price ", text: $name)
                     .frame(width: 250, height: 35)
@@ -53,14 +55,7 @@ struct secondPage: View {
                                 .foregroundColor(.black)
                                 .background(.white)
                                 .padding()
-                    
-                        
-                    })
-                
-                    
-                
-                
-                
+                }).padding(100)
                 
                 if submit{
                     
