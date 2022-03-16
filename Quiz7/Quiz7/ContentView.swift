@@ -14,6 +14,9 @@ struct Student {
 }
 
 struct ContentView: View {
+    @State var name: String = ""
+    @State var age: Int = 0
+    @State var student: Student = Student()
     var body: some View {
         NavigationView{
         ZStack{
@@ -94,9 +97,7 @@ struct ContentView: View {
                     }
                 }
                 
-                if submit{
-                    
-                }
+                
                 
                 
                 

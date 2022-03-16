@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct secondPage: View {
+    var student:Student Student()
+    @State var submit = false
     var body: some View {
         NavigationView{
         ZStack{
-                    Color.purple
-                            .ignoresSafeArea()
-                           
+            Color.purple
+            .ignoresSafeArea()
+            
             VStack(alignment: .center){
                   
                 HStack{
@@ -75,13 +77,13 @@ struct secondPage: View {
                             .fontWeight(.medium)
                             .foregroundColor(Color.black)
                             .multilineTextAlignment(.center)
-        
                     }
-                    
                 }
                 
-                
-                
+                if submit{
+                    
+                    
+                }
                 
                 
 
@@ -90,6 +92,8 @@ struct secondPage: View {
         }
     }
 }
+
+
 
 struct ContentView_Previews2: PreviewProvider {
     static var previews: some View {
