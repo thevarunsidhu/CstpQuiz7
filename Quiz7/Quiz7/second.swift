@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct secondPage: View {
-    var student:Student Student()
     @State var submit = false
     var body: some View {
         NavigationView{

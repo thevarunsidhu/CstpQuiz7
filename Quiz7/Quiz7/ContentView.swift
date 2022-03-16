@@ -7,16 +7,17 @@
 
 import SwiftUI
 
-struct Student {
-    var name: String = ""
-    var age: Int = 0
-    
-}
+//struct Student {
+//    var name: String = ""
+//    var age: Int = 0
+//
+//}
 
 struct ContentView: View {
+    //let network = Network()
     @State var name: String = ""
     @State var age: Int = 0
-    @State var student: Student = Student()
+    //@State var student: Student = Student()
     var body: some View {
         NavigationView{
         ZStack{
@@ -46,35 +47,45 @@ struct ContentView: View {
                     }
                 }
                 
-                HStack{
-                    ZStack{
-                        
-                        Rectangle()
-                            .fill(Color.white)
-                            .frame(width: 200, height: 200)
-                        
-                        VStack{
-                            Text("[Title]")
-                                .fontWeight(.medium)
-                                .foregroundColor(Color.black)
-                                .multilineTextAlignment(.leading)
-                                .padding()
-                            
-                            Text("[Price]")
-                                .fontWeight(.medium)
-                                .foregroundColor(Color.black)
-                                .multilineTextAlignment(.leading)
+                ScrollView(.horizontal) {
+                    HStack(spacing: 20) {
+                        ForEach(0..<10) {
+                            Text("Item \($0)")
+                                .foregroundColor(.black)
+                                .frame(width: 200, height: 200)
+                                .background(Color.white)
                         }
                     }
-                    
-                    ZStack(alignment: .center){
-                        
-                        Rectangle()
-                            .fill(Color.white)
-                            .frame(width: 200, height: 200)
-                    }
-                }
+                }.padding()
                 
+//                HStack{
+//                        ZStack{
+//                            Rectangle()
+//                                .fill(Color.white)
+//                                .frame(width: 200, height: 200)
+//
+//                            VStack{
+//                                Text("[Title]")
+//                                    .fontWeight(.medium)
+//                                    .foregroundColor(Color.black)
+//                                    .multilineTextAlignment(.leading)
+//                                    .padding()
+//
+//                                Text("[Price]")
+//                                    .fontWeight(.medium)
+//                                    .foregroundColor(Color.black)
+//                                    .multilineTextAlignment(.leading)
+//                            }
+//                        }
+//
+//                        ZStack(alignment: .center){
+//
+//                            Rectangle()
+//                                .fill(Color.white)
+//                                .frame(width: 200, height: 200)
+//                        }
+//                    }
+//
                 HStack{
                     ZStack{
                         
@@ -107,11 +118,9 @@ struct ContentView: View {
         }
         }
     }
-}
-
-extension UINavigationController{
     
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

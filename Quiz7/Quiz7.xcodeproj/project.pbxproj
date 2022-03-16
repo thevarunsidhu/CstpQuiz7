@@ -12,6 +12,8 @@
 		F2B6B8DC27E252FB00A9B74B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B6B8DB27E252FB00A9B74B /* Assets.xcassets */; };
 		F2B6B8DF27E252FB00A9B74B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B6B8DE27E252FB00A9B74B /* Preview Assets.xcassets */; };
 		F2B6B8E627E257BF00A9B74B /* second.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6B8E527E257BF00A9B74B /* second.swift */; };
+		F2B6B8E827E266B600A9B74B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6B8E727E266B600A9B74B /* Network.swift */; };
+		F2B6B8EA27E266F700A9B74B /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B6B8E927E266F700A9B74B /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		F2B6B8DB27E252FB00A9B74B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2B6B8DE27E252FB00A9B74B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2B6B8E527E257BF00A9B74B /* second.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = second.swift; sourceTree = "<group>"; };
+		F2B6B8E727E266B600A9B74B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		F2B6B8E927E266F700A9B74B /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +59,11 @@
 			children = (
 				F2B6B8D727E252F500A9B74B /* Quiz7App.swift */,
 				F2B6B8D927E252F500A9B74B /* ContentView.swift */,
+				F2B6B8E727E266B600A9B74B /* Network.swift */,
 				F2B6B8DB27E252FB00A9B74B /* Assets.xcassets */,
 				F2B6B8DD27E252FB00A9B74B /* Preview Content */,
 				F2B6B8E527E257BF00A9B74B /* second.swift */,
+				F2B6B8E927E266F700A9B74B /* Food.swift */,
 			);
 			path = Quiz7;
 			sourceTree = "<group>";
@@ -142,6 +148,8 @@
 			files = (
 				F2B6B8DA27E252F500A9B74B /* ContentView.swift in Sources */,
 				F2B6B8D827E252F500A9B74B /* Quiz7App.swift in Sources */,
+				F2B6B8EA27E266F700A9B74B /* Food.swift in Sources */,
+				F2B6B8E827E266B600A9B74B /* Network.swift in Sources */,
 				F2B6B8E627E257BF00A9B74B /* second.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
