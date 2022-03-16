@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct secondPage: View {
+    @State var name: String = ""
     @State var submit = false
     var body: some View {
         NavigationView{
@@ -20,7 +21,6 @@ struct secondPage: View {
                 HStack{
                     
                     ZStack{
-                        
                         Rectangle()
                             .fill(Color.white)
                             .frame(width: 375, height: 100)
@@ -35,49 +35,32 @@ struct secondPage: View {
                     
                 }
                 
-                HStack{
-                    
-                    ZStack{
-                        
-                        Rectangle()
-                            .fill(Color.white)
-                            .frame(width: 375, height: 400)
-                        VStack{
-                            Text("[Title]")
-                                .fontWeight(.medium)
-                                .foregroundColor(Color.black)
-                                .multilineTextAlignment(.center)
-                                .padding()
-                            Text("[Price]")
-                                .fontWeight(.medium)
-                                .foregroundColor(Color.black)
-                                .multilineTextAlignment(.center)
-                                .padding()
-                            Text("FORM")
-                                .fontWeight(.medium)
-                                .foregroundColor(Color.black)
-                                .multilineTextAlignment(.center)
-                                .padding()
-                        }
-        
-                    }
-                    
-                }
+
+                TextField("Title ", text: $name)
+                    .frame(width: 250, height: 35)
+                    .textFieldStyle(.roundedBorder)
                 
-                HStack(alignment: .center){
+                TextField("Price ", text: $name)
+                    .frame(width: 250, height: 35)
+                    .textFieldStyle(.roundedBorder)
+                
+                Button(action:{
+                        
+                        submit.toggle()},
+                        label: {
+                            Text("Submit")
+                                .frame(width: 210, height:35, alignment: .center)
+                                .foregroundColor(.black)
+                                .background(.white)
+                                .padding()
                     
-                    ZStack{
                         
-                        Rectangle()
-                            .fill(Color.white)
-                            .frame(width: 100, height: 75)
-                        
-                        Text("Submit")
-                            .fontWeight(.medium)
-                            .foregroundColor(Color.black)
-                            .multilineTextAlignment(.center)
-                    }
-                }
+                    })
+                
+                    
+                
+                
+                
                 
                 if submit{
                     
